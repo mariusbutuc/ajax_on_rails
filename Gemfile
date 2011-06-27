@@ -7,6 +7,7 @@ gem 'rails', '3.1.0.rc1'
 
 gem 'sqlite3'
 gem 'nifty-generators'
+gem 'heroku'
 
 # Asset template engines
 gem 'sass'
