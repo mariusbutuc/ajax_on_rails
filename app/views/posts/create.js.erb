@@ -1,0 +1,11 @@
+<% if @post.errors.any? -%>
+  $('#flash_notice').hide(300);
+  $('#post_errors').html("<%= escape_javascript(error_messages_for(@post)) %>").show(300);
+<% else -%>
+  $('#post_errors').hide(300);
+  $('#flash_notice').html("<%= escape_javascript(flash[:notice]) %>").show(300);
+  //  Clear the entire form
+  $(':input:not(input[type=submit])').val('');
+  // Update the posts list
+  $('#posts_list').html("<%= escape_javascript( render partial: 'posts' ) %>");
+<% end -%>
