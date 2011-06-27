@@ -5,7 +5,8 @@ gem 'rails', '3.1.0.rc1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'sqlite3'
+gem 'nifty-generators'
 
 # Asset template engines
 gem 'sass'
@@ -27,3 +28,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+gem "mocha", :group => :test
